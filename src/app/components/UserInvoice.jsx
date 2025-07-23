@@ -74,7 +74,7 @@ const UserInvoice = ({ userId }) => {
           No bookings yet
         </h3>
         <p className="text-gray-500">
-          You haven't made any reservations. Start exploring our amazing stays!
+          You haven&apos;t made any reservations. Start exploring our amazing stays!
         </p>
       </div>
     );
@@ -211,7 +211,7 @@ const UserInvoice = ({ userId }) => {
               No bookings available
             </h3>
             <p className="text-gray-500">
-              You haven't made any reservations yet.
+              You haven&apos;t made any reservations yet.
             </p>
           </div>
         )}

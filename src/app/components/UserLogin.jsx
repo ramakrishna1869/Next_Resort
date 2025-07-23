@@ -100,7 +100,7 @@ const UserLogin = () => {
                   Login
                 </button>
                 <Link href="/register" className="block text-center text-yellow-300 hover:text-yellow-200 transition-colors duration-200 mt-4 underline">
-                  Don't have an account? Register here
+                  Don&apos;t have an account? Register here
                 </Link>
               </div>
             </form>
