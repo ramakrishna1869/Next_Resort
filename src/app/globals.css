@@ -1,0 +1,85 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom component classes using Tailwind */
+@layer components {
+  .form-container {
+    @apply flex flex-col justify-center items-center min-h-screen relative bg-black/20 p-5 rounded-lg;
+  }
+  
+  .form-section {
+    @apply border-2 border-gray-400 w-full max-w-md flex flex-col justify-center items-center bg-teal-700 py-8 px-5 text-white rounded-xl shadow-lg;
+  }
+  
+  .form-section h1 {
+    @apply -mt-8 border-b border-white pb-2 mb-4 text-2xl font-bold;
+  }
+  
+  .banner-image {
+    @apply w-full h-96 md:h-[500px] object-cover rounded-lg shadow-md;
+  }
+  
+  .input-field {
+    @apply text-lg w-full h-11 mb-3 pl-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-transparent transition-all duration-200;
+  }
+  
+  .btn-primary {
+    @apply px-12 py-3 bg-indigo-600 hover:bg-indigo-700 text-white font-medium rounded-md transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2;
+  }
+  
+  .btn-secondary {
+    @apply px-6 py-2 bg-gray-600 hover:bg-gray-700 text-white font-medium rounded-md transition-colors duration-200;
+  }
+  
+  .nav-section {
+    @apply bg-gray-800 text-white flex justify-between h-20 items-center px-5 cursor-pointer sticky top-0 left-0 z-50;
+  }
+  
+  .user-section {
+    @apply flex gap-3 cursor-pointer;
+  }
+  
+  .nav-link {
+    @apply text-white cursor-pointer hover:text-gray-300 transition-colors duration-200;
+  }
+  
+  .room-image {
+    @apply border border-gray-300 w-full h-64 object-cover rounded-lg shadow-md;
+  }
+  
+  .product-card {
+    @apply border border-gray-200 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-200 bg-white;
+  }
+  
+  .product-grid {
+    @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-6;
+  }
+  
+  .container-section {
+    @apply min-h-screen bg-gray-50;
+  }
+  
+  .form-input {
+    @apply w-4/5 h-11 mb-3 pl-3 text-lg border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-transparent;
+  }
+  
+  .form-button {
+    @apply px-12 py-3 bg-indigo-600 hover:bg-indigo-700 text-white border border-white rounded-md transition-colors duration-200;
+  }
+  
+  .auth-link {
+    @apply text-yellow-400 mt-3 hover:text-yellow-300 transition-colors duration-200;
+  }
+}
+
+/* Responsive utilities */
+@layer utilities {
+  .text-responsive {
+    @apply text-sm sm:text-base md:text-lg lg:text-xl;
+  }
+  
+  .container-responsive {
+    @apply w-full sm:w-4/5 md:w-3/5 lg:w-2/5;
+  }
+}
